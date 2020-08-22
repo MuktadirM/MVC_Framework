@@ -1,7 +1,13 @@
 <?php
+//load config
+require_once 'config/config.php';
+
 /*
 initialize first require 
 */
-require_once 'libraries/Core.php';
-require_once 'libraries/BaseController.php';
-require_once 'libraries/Database.php';
+//auto load
+spl_autoload_register(function($className){
+
+ require_once 'libraries/' .$className. '.php';
+
+});

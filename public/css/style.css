@@ -1,0 +1,60 @@
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 4rem auto 4rem;
+    grid-template-areas: "header-area"
+                         "body-content-area"
+                         "footer-area";
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.header{
+    grid-area: header-area;
+    background-color: green;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.logo-section{
+    flex: 1;
+}
+
+.main-menu{
+    flex: 1;
+}
+.main-menu ul li{
+    display: inline-block;
+}
+
+.content-body{
+    grid-area: body-content-area;
+    background-color: gray;
+    height: 100%;
+}
+
+.footer{
+    grid-area: footer-area;
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-footer{
+    flex: 1;
+}
+
+.copy-right-info{
+    flex: 1;
+}
