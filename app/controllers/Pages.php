@@ -10,4 +10,8 @@ class Pages extends BaseController{
     public function about(){
         $this->view('pages/about');
     }
+
+    public function contact(){
+        $this->view('pages/contact');
+    }
 }
