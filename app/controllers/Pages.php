@@ -8,6 +8,6 @@ class Pages extends BaseController{
     }
 
     public function about(){
-        
+        $this->view('pages/about');
     }
 }
