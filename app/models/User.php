@@ -6,5 +6,9 @@ class User{
         $this->db = new RelationalDb;
     }
 
+    public function getAll(){
+        return $this->db->fetchAll();
+    }
+
 
 }
