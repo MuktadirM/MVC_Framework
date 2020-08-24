@@ -1,6 +1,8 @@
 <?php
 class Pages extends BaseController{
+    
     public function __construct(){
+        $this->anyModel = $this->model('User');
     }
 
     public function index(){

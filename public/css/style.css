@@ -34,6 +34,11 @@ body{
 }
 .main-menu ul li{
     display: inline-block;
+    
+}
+
+.main-menu ul li a{
+    text-decoration: none;
 }
 
 .content-body{
@@ -53,6 +58,10 @@ body{
 
 .main-footer{
     flex: 1;
+}
+
+.main-footer ul li a{
+    text-decoration: none;
 }
 
 .copy-right-info{

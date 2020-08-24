@@ -1,8 +1,6 @@
 <?php
 
 //base controller it load models and views
-
-
 class BaseController{
 
     public function model($model){
