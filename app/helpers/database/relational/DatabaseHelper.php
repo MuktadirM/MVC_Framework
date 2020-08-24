@@ -6,7 +6,7 @@ class DatabaseHelper{
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
 
-    private $dbh;
+    private $dbHandler;
     private $stmt;
     private $error;
 
@@ -20,7 +20,7 @@ class DatabaseHelper{
 
       // Create PDO instance
       try{
-        $this->dbh = new PDO($dsn, $this->user, $this->pass, $options);
+        $this->dbHandler = new PDO($dsn, $this->user, $this->pass, $options);
       } catch(PDOException $e){
         $this->error = $e->getMessage();
         echo $this->error;
@@ -29,7 +29,7 @@ class DatabaseHelper{
 
     // Prepare statement with query
     public function query($sql){
-      $this->stmt = $this->dbh->prepare($sql);
+      $this->stmt = $this->dbHandler->prepare($sql);
     }
 
     // Bind values
