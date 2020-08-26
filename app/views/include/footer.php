@@ -4,7 +4,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                <a href="<?php echo URLROOT; ?>/">Home</a>
                 </li>
             </ul>
         </nav>

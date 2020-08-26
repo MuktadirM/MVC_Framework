@@ -16,9 +16,6 @@ class Pages extends BaseController{
         
 
      //  echo 'Has error '.isset($_SESSION['has_error']);
-       
-
-
 
     }
 
@@ -35,6 +32,7 @@ class Pages extends BaseController{
                'title'=>SITENAME,
                'description'=>'Nothing',
                'message'=>'Welcome',
+               'page'=>SITENAME,
            ];
 
         $this->view('pages/index',$data);
@@ -46,6 +44,7 @@ class Pages extends BaseController{
             'title'=>'About',
             'description'=>'Nothing',
             'message'=>'Welcome',
+            'page'=>'About us',
         ];
         $this->view('pages/about',$data);
     }
@@ -55,6 +54,7 @@ class Pages extends BaseController{
             'title'=>'Contact us',
             'description'=>'Nothing',
             'message'=>'Welcome',
+            'page'=>'Contact us'
         ];
         $this->view('pages/contact',$data);
     }

@@ -13,6 +13,6 @@ define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT','http://localhost/projects/mvc_framework');
 
 //website name
-define('SITENAME','Your Website Name');
+define('SITENAME','Personal website');
 
 
