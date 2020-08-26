@@ -18,3 +18,4 @@ spl_autoload_register(function($className){
 
 require_once 'helpers/database/IFetchData.php';
 require_once 'helpers/database/relational/RelationalDb.php';
+require_once 'models/AppError.php';

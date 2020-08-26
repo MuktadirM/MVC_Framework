@@ -15,13 +15,11 @@ class Core{
     {
        $url  = $this->getUrl();
        //look up in controller folder does this controller available
-
-
+      
         if($url != null && file_exists('../app/controllers/'.ucwords($url[0]).'.php')){
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
         }
-
 
        require_once '../app/controllers/'.$this->currentController.'.php';
        

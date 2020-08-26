@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
-    <title><?php echo SITENAME; ?></title>
+    <title><?php echo $data['title'] ?></title>
 </head>
 <body>
    <div class="header">
@@ -14,16 +14,16 @@
        <nav class="main-menu">
            <ul>
                <li>
-                   <a href="#">Home</a>
+                   <a href="<?php echo URLROOT; ?>/">Home</a>
                </li>
                <li>
-                   <a href="#">Profile</a>
+                   <a href="<?php echo URLROOT; ?>/profiles">Profile</a>
                </li>
                <li>
-                   <a href="#">About</a>
+                   <a href="<?php echo URLROOT; ?>/pages/about">About</a>
                </li>
                <li>
-                   <a href="#">Contact-us</a>
+                   <a href="<?php echo URLROOT; ?>/pages/contact">Contact-us</a>
                </li>
            </ul>
        </nav>
